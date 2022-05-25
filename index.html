@@ -10,12 +10,13 @@
         <div id="app">
             <input v-model.number="value1" type="number" ref="value1"><br>
             <input v-model.number="value2" type="number"><br>
+            商: {{ quotient }}<br>
+            余: {{ remainder }}<br>
+            <hr>
             ＋: {{ add }}<br>
             −: {{ subtract }}<br>
             ×: {{ multiply }}<br>
-            ÷: {{ divide }}<br>
-            商: {{ quotient }}
-            余: {{ remainder }}
+            ÷: {{ divide }}
         </div>
     </p>
     <script src="https://unpkg.com/vue@3.2.36"></script>
