@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>Remainder Calculator</title>
+</head>
+<body>
+    <h1></h1>
+    <p>
+        <div id="app">
+            <input v-model="number1" /><br>
+            <input v-model="number2" /><br>
+            ＋: {{ add }}<br>
+            −: {{ subtract }}<br>
+            ×: {{ multiply }}<br>
+            ÷: {{ divide }}<br>
+            商: {{ quotient }}
+            余: {{ remainder }}
+        </div>
+    </p>
+    <script src="https://unpkg.com/vue@3.2.36"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
