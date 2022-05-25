@@ -14,8 +14,8 @@ const Counter = {
 Vue.createApp({
     data() {
         return {
-            number1: '',
-            number2: ''
+            value1: '',
+            value2: ''
         }
     },
     computed: {
@@ -40,10 +40,13 @@ Vue.createApp({
     },
     methods: {
         calc(func) {
-            if (this.number1 === '' || this.number2 ==='') {
+            if (this.value1 === '' || this.value2 ==='') {
                 return null
             }
-            return func(this.number1, this.number2)
+            return func(this.value1, this.value2)
         }
+    },
+    mounted() {
+        this.$refs.value1.focus()
     }
 }).mount('#app')
