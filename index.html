@@ -10,6 +10,7 @@
         <div id="app">
             <input v-model.number="value1" type="number" ref="value1"><br>
             <input v-model.number="value2" type="number"><br>
+            <button v-on:click="clear">Clear</button><br>
             商: {{ quotient }}<br>
             余: {{ remainder }}<br>
             <hr>

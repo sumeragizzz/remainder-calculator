@@ -31,6 +31,11 @@ Vue.createApp({
                 return null
             }
             return func(this.value1, this.value2)
+        },
+        clear(event) {
+            this.value1 = ''
+            this.value2 = ''
+            this.$refs.value1.focus()
         }
     },
     mounted() {
